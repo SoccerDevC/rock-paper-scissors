@@ -1,7 +1,9 @@
 const computerChoices =["Rock", "Paper","Scissors"];
+let randomChoice =1 ;
+let computerChoice = " ";
 
 function getComputerChoice(){
-    let randomChoice = Math.floor(Math.random()*3);
-    let computerChoice = computerChoices[randomChoice];
-    
+    randomChoice = Math.floor(Math.random()*3);
+    computerChoice = computerChoices[randomChoice];
+    return computerChoice;
 }
